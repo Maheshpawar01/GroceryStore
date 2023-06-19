@@ -1,9 +1,15 @@
 import React from "react";
 import ProductCard from "./ProductCard";
-import img1 from "../../ASSETS/images/i1.png";
-import img2 from "../../ASSETS/images/i2.png";
-import img3 from "../../ASSETS/images/i3.png";
-import img4 from "../../ASSETS/images/i4.png";
+import img1 from "../../ASSETS/productimg/apple.png"
+import img2 from "../../ASSETS/productimg/banana.png"
+import img3 from "../../ASSETS/productimg/brocoli.png"
+import img4 from "../../ASSETS/productimg/cabbage.png"
+import img5 from "../../ASSETS/productimg/cucumber.png"
+import img6 from "../../ASSETS/productimg/kiwi.png"
+import img7 from "../../ASSETS/productimg/potato.png"
+import img8 from "../../ASSETS/productimg/spinach.png"
+import img9 from "../../ASSETS/productimg/tomato.png"
+import img10 from "../../ASSETS/images/i4.png"
 import "./AllProduct.css";
 
 const AllProduct = () => {
@@ -12,8 +18,8 @@ const AllProduct = () => {
       id: 1,
       productimage: img1,
       productname: "Product 1",
-      productprice: 100,
-      counttype: "1 each",
+      productprice: 200,
+      counttype: "1 per kg",
       discountprecent: 12,
     },
     {
@@ -42,7 +48,7 @@ const AllProduct = () => {
     },
     {
       id: 5,
-      productimage: img1,
+      productimage: img5,
       productname: "Product 5",
       productprice: 100,
       counttype: "1 each",
@@ -50,7 +56,7 @@ const AllProduct = () => {
     },
     {
       id: 6,
-      productimage: img2,
+      productimage: img6,
       productname: "Product 6",
       productprice: 100,
       counttype: "1 per kg",
@@ -58,7 +64,7 @@ const AllProduct = () => {
     },
     {
       id: 7,
-      productimage: img3,
+      productimage: img7,
       productname: "Product 7",
       productprice: 500,
       counttype: "1 per kg",
@@ -66,7 +72,7 @@ const AllProduct = () => {
     },
     {
       id: 8,
-      productimage: img4,
+      productimage: img8,
       productname: "Product 8",
       productprice: 200,
       counttype: "1 per kg",
@@ -74,7 +80,7 @@ const AllProduct = () => {
     },
     {
       id: 9,
-      productimage: img1,
+      productimage: img9,
       productname: "Product 7",
       productprice: 500,
       counttype: "1 per kg",
@@ -82,7 +88,7 @@ const AllProduct = () => {
     },
     {
       id: 10,
-      productimage: img2,
+      productimage: img10,
       productname: "Product 8",
       productprice: 200,
       counttype: "1 per kg",

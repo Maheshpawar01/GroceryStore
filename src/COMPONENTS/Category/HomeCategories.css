@@ -11,7 +11,7 @@
 .homecategories .container{
     width: 24%;
     min-width: 300px;
-    height: 300px;
+    height: 180px;
     overflow: hidden;
     display: flex;
     flex-wrap: wrap;
@@ -22,8 +22,11 @@
 }
 
 .homecategories .container img{
-    width: 50%;
+    width: 35%;
     object-fit: cover;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
 
 }
 
@@ -36,19 +39,20 @@
 }
 
 .homecategories .container .content h1{
-    font-size: 19px;
+    font-size: 20px;
     font-weight: 400;
     margin: 0;
 }
 .homecategories .container .content p{
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 300;
     margin: 0;
+    padding: 0px;
 }
 
 .homecategories .container:nth-child(1){
     background-color: #fbdc6a;
-    color:white;
+    color:black;
 }
 .homecategories .container:nth-child(2){
     background-color: #ff9393;
