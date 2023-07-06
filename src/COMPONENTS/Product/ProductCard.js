@@ -1,6 +1,16 @@
-import React from "react";
-import './ProductCard.css'
+import React, { useState } from "react";
+import "./ProductCard.css";
+import { Link } from 'react-router-dom';
+
 const ProductCard = ({ data }) => {
+
+  const [show, setShow] = useState(false);
+  const [qty, setQty] = useState(1);
+
+  const getproductid = () => {
+   alert(data.id)
+  }
+
   return (
     <div className="product">
       <div className="s1">
@@ -8,16 +18,38 @@ const ProductCard = ({ data }) => {
       </div>
       <div className="s2">
         <h3>
-        ₹ {data.productprice - (data.productprice * data.discountprecent) / 100}
+          ₹{" "}
+          {data.productprice - (data.productprice * data.discountprecent) / 100}
           <span>₹{data.productprice}</span>
-          </h3>
-          <p>{
-            data.productname
-            }</p>
+        </h3>
+        <p>{data.productname}</p>
       </div>
-      <div className="s3"><p>{data.counttype}</p></div>
-      <div className="addbtn">
-        <svg
+      <div className="s3">
+        <p>{data.counttype}</p>
+      </div>
+      {
+        show ? 
+        <div className="addbtn">
+          <div className="qty">
+            <button 
+            onClick={()=>{
+              if(qty>1){
+                setQty(qty-1)
+              }
+            }}
+            >-</button>
+            <p>{qty}</p>
+            <button onClick={()=> setQty(qty+1)}>+</button>
+          </div>
+          <button className="addtocart" onClick={()=>{
+            setShow(false)
+            alert("Added to cart")
+          }}>Add to cart</button>
+        </div>
+        :
+        <div className="addbtn">
+       <Link to={`/Product/${data.id}`}>
+       <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
@@ -36,6 +68,7 @@ const ProductCard = ({ data }) => {
             d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
           />
         </svg>
+       </Link>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -43,6 +76,7 @@ const ProductCard = ({ data }) => {
           strokeWidth={1.5}
           stroke="currentColor"
           className="w-6 h-6"
+          onClick = {()=> setShow(true)}
         >
           <path
             strokeLinecap="round"
@@ -51,6 +85,7 @@ const ProductCard = ({ data }) => {
           />
         </svg>
       </div>
+      }
     </div>
   );
 };
