@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Navbar.css";
 import logo from "../../ASSETS/logo.png";
 import Dropdown from "react-bootstrap/Dropdown";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const [cartquantity, setCartquantity] = useState(0);
@@ -68,6 +69,9 @@ function Navbar() {
         </div>
       </div>
       <div className="s2">
+      <Link to="/">
+     Home
+      </Link>
         <Dropdown>
           <Dropdown.Toggle variant="" id="dropdown-basic">
             Categories
@@ -79,8 +83,13 @@ function Navbar() {
             <Dropdown.Item href="#/action-3">House Cleaning</Dropdown.Item>
           </Dropdown.Menu>
         </Dropdown>
-        <a href="">About Us</a>
-        <a href="">Contact Us</a>
+        <Link to="/about">
+        About Us
+        </Link>
+        <Link to="/contact">
+        Contact Us
+        </Link>
+        
         <Dropdown>
           <Dropdown.Toggle variant="" id="dropdown-basic">
             More
