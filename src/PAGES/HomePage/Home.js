@@ -107,6 +107,8 @@ function Home() {
       <BannerSlider />
       <HomeCategories />
       <Product_Sidebar />
+      <Footer1 />
+
       <div className="slidercont">
         <ProductsSlider  products={products} categoryname="Related Products"/> 
         
@@ -116,7 +118,6 @@ function Home() {
         <ProductsSlider  products={products} categoryname="Explore More"/> 
         
       </div>
-      <Footer1 />
       <Footer2 />
     </div>
   );
