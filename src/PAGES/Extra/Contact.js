@@ -9,7 +9,7 @@ const Contact = () => {
   const [rating, setRating] = React. useState(0)
   return (
     <div className='extrapage'>
-    <Navbar/>
+    <Navbar reloadnavbar={false}/>
     <SingleBanner heading="Contact Us"
      bannerimage="https://www.wallpaperbetter.com/wallpaper/796/852/888/fruits-berries-plate-peaches-cherries-1080P-wallpaper-middle-size.jpg"
 

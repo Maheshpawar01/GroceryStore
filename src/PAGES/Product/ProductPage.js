@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+
 import { Link } from "react-router-dom";
 import "./ProductPage.css";
 import { useParams } from "react-router-dom";
@@ -16,6 +17,7 @@ import Navbar from "../../COMPONENTS/Navbar/Navbar";
 import Footer1 from "../../COMPONENTS/Footer/Footer1";
 import Footer2 from "../../COMPONENTS/Footer/Footer2";
 import ProductsSlider from "../../COMPONENTS/Product/ProductsSlider";
+import { toast } from "react-toastify";
 
 const ProductPage = () => {
   const { prodid } = useParams();
@@ -204,13 +206,67 @@ const ProductPage = () => {
       discountprecent: 12,
     },
   ]
+
+  const [reloadnavbar, setReloadnavbar] = React.useState(false)
+
+ 
+
+  // after clicking add to cart btn then function apply
+  const addtocart = () =>{
+    let cart = JSON.parse(localStorage.getItem('cart'))
+
+    if(cart){
+      let itemincart = cart.find(item=> item.productdata.ProductId === productdata.ProductId)
+      if(itemincart){
+        cart = cart.map(item=>{
+          if(item.productdata.ProductId === productdata.ProductId){
+            return{
+              ...item,
+              quantity: item.quantity + count
+            }
+          }
+          else{
+            return item
+          }
+
+        })
+        localStorage.setItem("cart", JSON.stringify(cart))
+
+      }
+
+      else{
+        cart = [
+          ...cart,
+          {
+            productdata,
+            quantity: count
+          }
+        ]
+          localStorage.setItem('cart', JSON.stringify(cart))
+      }
+    }
+    else{
+      cart= [{
+        productdata,
+        quantitiy: count
+      }]
+      // console.log(cart)
+      localStorage.setItem('cart',JSON.stringify(cart))
+    }
+
+    toast.success('Item added to cart')
+    setReloadnavbar(!reloadnavbar);
+
+    // window.location.reload()
+  }
+
   return (
     <div className="productpage">
       {/* <h1>Product id is - {prodid}</h1>
         <p>
           {JSON.stringify(productdata)}
         </p> */}
-      <Navbar />
+      <Navbar reloadnavbar={reloadnavbar} />
       <div className="pc1">
         <Link to="/">
           <button className="goback">
@@ -289,7 +345,7 @@ const ProductPage = () => {
           <div className="btncont">
             <button
               onClick={() => {
-                alert("Added to cart");
+                addtocart()
               }}
             >
               Add to Cart

@@ -6,7 +6,7 @@ import './AuthPage.css'
 const Login = () => {
   return (
     <div className='authpage'>
-        <Navbar/>
+        <Navbar reloadnavbar={false}/>
 
         <div className="authcont">
             <img src="https://www.wallpaperbetter.com/wallpaper/796/852/888/fruits-berries-plate-peaches-cherries-1080P-wallpaper-middle-size.jpg" alt="login" />

@@ -6,12 +6,12 @@ import './AuthPage.css'
 const Signup = () => {
   return (
     <div className='authpage'>
-        <Navbar/>
+        <Navbar reloadnavbar={false}/>
 
         <div className="authcont">
             <img src="https://www.wallpaperbetter.com/wallpaper/796/852/888/fruits-berries-plate-peaches-cherries-1080P-wallpaper-middle-size.jpg" alt="signup" />
 
-            <form action="" className="authform">
+            <form action="" className="asuthform">
                 <h1>Signup</h1>
 
                 <div className="form-group-row">
