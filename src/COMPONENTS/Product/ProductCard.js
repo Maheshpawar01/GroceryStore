@@ -63,15 +63,15 @@ const ProductCard = ({ data }) => {
   return (
     <div className="product">
       <div className="s1">
-        <img src={data.productimage} alt={"no image"} />
+        <img src={data.ProductImage[0].image} alt={"no image"} />
       </div>
       <div className="s2">
         <h3>
           ₹{" "}
-          {data.productprice - (data.productprice * data.discountprecent) / 100}
-          <span>₹{data.productprice}</span>
+          {data.ProductPrice - (data.ProductPrice * data.ProductDiscount) / 100}
+          <span>₹{data.ProductPrice}</span>
         </h3>
-        <p>{data.productname}</p>
+        <p>{data.ProductName}</p>
       </div>
       <div className="s3">
         <p>{data.counttype}</p>
