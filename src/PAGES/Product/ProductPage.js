@@ -580,9 +580,6 @@ const ProductPage = () => {
   ]
 
   const [reloadnavbar, setReloadnavbar] = React.useState(false)
-
- 
-
   // after clicking add to cart btn then function apply
   const addtocart = () =>{
     let cart = JSON.parse(localStorage.getItem('cart'))
@@ -622,14 +619,12 @@ const ProductPage = () => {
         productdata,
         quantitiy: count
       }]
-      // console.log(cart)
       localStorage.setItem('cart',JSON.stringify(cart))
     }
 
-    toast.success('Item added to cart')
     setReloadnavbar(!reloadnavbar);
-
-    // window.location.reload()
+    toast.success('Item added to cart')
+      // window.location.reload()
   }
 
   return (
