@@ -10,23 +10,54 @@ import 'react-multi-carousel/lib/styles.css';
 
 const ProductsSlider = ({products, categoryname}) => {
     const responsive = {
-        superLargeDesktop: {
-          // the naming can be any, depends on you.
-          breakpoint: { max: 4000, min: 3000 },
+        // superLargeDesktop: {
+        //   // the naming can be any, depends on you.
+        //   breakpoint: { max: 4000, min: 3000 },
+        //   items: 7
+        // },
+        // desktop: {
+        //   breakpoint: { max: 3000, min: 1024 },
+        //   items: 7
+        // },
+        // tablet: {
+        //   breakpoint: { max: 1024, min: 464 },
+        //   items: 4
+        // },
+        // mobile: {
+        //   breakpoint: { max: 464, min: 0 },
+        //   items: 2
+        // // }
+
+         
+        display6:{
+          breakpoint:{max:2000, min:1500},
           items: 7
         },
-        desktop: {
-          breakpoint: { max: 3000, min: 1024 },
-          items: 7
+        display5:{
+          breakpoint:{max:1700, min:1500},
+          items: 6
         },
-        tablet: {
-          breakpoint: { max: 1024, min: 464 },
+        display4:{
+          breakpoint:{max:1500, min:1200},
+          items: 5
+        },
+        display3:{
+          breakpoint:{max:1200, min:900},
           items: 4
         },
-        mobile: {
-          breakpoint: { max: 464, min: 0 },
+        display2:{
+          breakpoint:{max:900, min:600},
+          items: 3
+        },
+        display1:{
+          breakpoint:{max:600, min:300},
           items: 2
+        },
+        display0:{
+          breakpoint:{max:500, min:0},
+          items: 1
         }
+    
     };
 
 

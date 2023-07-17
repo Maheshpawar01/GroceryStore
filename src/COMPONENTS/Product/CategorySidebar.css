@@ -26,5 +26,21 @@
 
 .categorysidebar .category h3{
     font-size: 18px;
+    padding: 0px;
+}
+
+@media (max-width:650px){
+    .categorysidebar{
+        width: 100%;
+        margin: 20px 0px;
+        display: flex;
+        flex-direction: column;
+        /* flex-wrap: wrap; */
+        justify-content: center;
+        gap: 10px;
+        height: 260px;
+        overflow-x: scroll;
+
+    }
 }
 
