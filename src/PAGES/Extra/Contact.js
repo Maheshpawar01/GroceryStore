@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Navbar from '../../COMPONENTS/Navbar/Navbar'
 import SingleBanner from '../../COMPONENTS/Banners/SingleBanner'
 import Footer2 from '../../COMPONENTS/Footer/Footer2'
@@ -6,6 +6,10 @@ import Footer1 from '../../COMPONENTS/Footer/Footer1'
 import './Extrapages.css'
 
 const Contact = () => {
+  
+  useEffect(()=>{
+    window.scrollTo(0,0)
+  },[])
   const [rating, setRating] = React. useState(0)
   return (
     <div className='extrapage'>

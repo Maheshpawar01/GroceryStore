@@ -3,6 +3,7 @@ import payimg from "../../ASSETS/pay.png";
 import logo from "../../ASSETS/logo.png";
 import social from "../../ASSETS/social.png";
 import './Footer2.css'
+import { Link } from "react-router-dom";
 
 const Footer2 = () => {
   return (
@@ -18,15 +19,17 @@ const Footer2 = () => {
         </div>
         <div className="f2">
           <h3>About Us</h3>
-          <p>About Us </p>
-          <p>Contact Us</p>
-          <p>About Team</p>
-          <p>Customer Support</p>
+          <Link to="/about" className="stylenone"><p>About Us </p></Link>
+          <Link to="/contact" className="stylenone"><p>Contact Us </p></Link>
+          <Link className="stylenone"><p>About Team </p></Link>
+          <Link  className="stylenone"><p>Customer Support </p></Link>
+         
         </div>
         <div className="f2">
           <h3>Our Information</h3>
-          <p>Privacy policy</p>
-          <p>Terms & condition</p>
+          <Link to="/privacypolicy" className="stylenone"><p>Privacy policy</p></Link>
+          <Link to="/termsandconditions" className="stylenone"><p>Terms & condition</p></Link>
+          
           <p>Return policy</p>
           <p>site map</p>
         </div>
