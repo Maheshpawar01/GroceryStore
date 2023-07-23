@@ -6,13 +6,6 @@ import { useParams } from "react-router-dom";
 import img1 from "../../ASSETS/images/i1.png";
 import img2 from "../../ASSETS/images/i2.png";
 import img3 from "../../ASSETS/images/i3.png";
-import img4 from "../../ASSETS/productimg/cabbage.png"
-import img5 from "../../ASSETS/productimg/cucumber.png"
-import img6 from "../../ASSETS/productimg/kiwi.png"
-import img7 from "../../ASSETS/productimg/potato.png"
-import img8 from "../../ASSETS/productimg/spinach.png"
-import img9 from "../../ASSETS/productimg/tomato.png"
-import img10 from "../../ASSETS/images/i4.png"
 import Navbar from "../../COMPONENTS/Navbar/Navbar";
 import Footer1 from "../../COMPONENTS/Footer/Footer1";
 import Footer2 from "../../COMPONENTS/Footer/Footer2";

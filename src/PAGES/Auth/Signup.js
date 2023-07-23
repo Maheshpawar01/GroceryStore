@@ -11,7 +11,7 @@ const Signup = () => {
         <div className="authcont">
             <img src="https://www.wallpaperbetter.com/wallpaper/796/852/888/fruits-berries-plate-peaches-cherries-1080P-wallpaper-middle-size.jpg" alt="signup" />
 
-            <form action="" className="asuthform">
+            <form action="" className="authform">
                 <h1>Signup</h1>
 
                 <div className="form-group-row">

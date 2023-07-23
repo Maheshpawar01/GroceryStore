@@ -22,7 +22,7 @@ const Login = () => {
                     <label htmlFor="password">Password</label>
                     <input type="password" id='password' />
                 </div>
-
+                
                 <Link to="/forgotpassword" className='stylenone'>
                 <p>Forgot Password?</p>
                 </Link>
