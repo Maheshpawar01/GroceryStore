@@ -1,4 +1,4 @@
-.authpage {
+.authpage{
     width: 100%;
     min-height: 100vh;
     background-color: white;
@@ -12,14 +12,13 @@
     gap: 20px;
     width: 80%;
     height: 80vh;
-    border-radius: 10px;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    box-shadow:  0 0 10px 0 rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     overflow: hidden;
     margin: 0 auto;
-    margin-top:10%;
+    margin-top: 10%;
     margin-bottom: 10%;
-    background-color: rgba(0, 0, 0, 0.799);
+    background-color: rgba(0, 0, 0, 0.798);
 }
 
 .authcont img{
@@ -28,34 +27,35 @@
     object-fit: cover;
 }
 
+
 .authform{
     display: flex;
-    flex-direction:column ;
+    flex-direction: column;
     width: 50%;
     padding: 20px;
-    gap: 5px; 
+    gap: 5px;
 }
 
-.authcont .formgroup{
+.authcont .formgroup {
     display: flex;
-    flex-direction:column ;
+    flex-direction: column;
     gap: 5px;
     width: 100%;
     margin: 10px 0px;
-   
 }
+
 
 .authform h1{
     font-size: 50px;
     font-weight: 500;
     color: var(--col1);
 }
-
 .authform label{
     font-size: 17px;
     font-weight: 500;
-    color: white;
+    color: rgb(255, 255, 255);
 }
+
 
 .authform input{
     padding: 10px;
@@ -67,6 +67,7 @@
     color: white;
     background-color: rgba(255, 255, 255, 0.042);
 }
+
 
 .authform button{
     width: 100%;
@@ -80,7 +81,6 @@
     background-color: var(--col1);
     cursor: pointer;
 }
-
 .authform button:hover{
     background-color: white;
     color: var(--col1);
@@ -89,48 +89,38 @@
 .authform p{
     font-size: 20px;
     font-weight: 500;
-    color: white;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     margin: 0px;
     padding: 0px;
     text-align: right;
 }
-
 .authform p:hover{
     color: var(--col1);
     cursor: pointer;
 }
-
 .authform .or{
     text-align: center;
     margin: 10px 0px;
     padding: 0px;
     font-size: 20px;
     color: white;
-
 }
-
 .form-group-row{
     display: flex;
-    gap: 0px;
-    /* flex-wrap: wrap; */
+    gap: 10px;
 }
-
-
-/* RESPONSIVENESS CSS */
-
-@media screen and (max-width: 1500px){
+@media (max-width: 1500px){
     .form-group-row{
         display: flex;
         gap: 10px;
-       flex-wrap: wrap;
+        flex-wrap: wrap;
     }
 }
-
-@media screen and (max-width:1300px ){
+@media (max-width: 1100px){
     .authcont{
         flex-direction: column;
-        /* height: 80%; */
+        /* height: 100%; */
         width: 80%;
         margin: 0px;
         margin-top: 10%;
@@ -139,50 +129,45 @@
         overflow: scroll;
         gap: 0px;
     }
-
     .authcont img{
         width: 100%;
         height: 40%;
     }
-
     .authform{
         width: 100%;
         margin: 0px;
         padding: 10px 20px;
-        gap: 5px;
+        gap: 0px;
     }
 
-    .authform label{
+    .authform  label{
         font-size: 15px;
     }
-
     .authform input{
         font-size: 15px;
-       margin: 0px;
+        margin: 0px;
     }
-
     .authform button{
         font-size: 18px;
-        padding: 8px;
+        padding: 10px;
     }
-
     .authform h1{
         font-size: 35px;
         text-align: center;
     }
 
-    .authform.formgroup{
+     .authform .formgroup{
         margin: 5px 0px;
     }
-
     .authform p, .authform .or{
         font-size: 15px;
         margin: 10px 0px;
     }
-
+   
 }
 
-@media screen and (max-width:500px){
+
+@media (max-width: 500px){
     .authcont{
         flex-direction: column;
         height: 100%;
@@ -192,12 +177,10 @@
         margin-bottom: 10%;
         align-self: center;
     }
-
     .authcont img{
         width: 100%;
         height: 30%;
     }
-
     .authform{
         width: 100%;
     }

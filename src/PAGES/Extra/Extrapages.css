@@ -23,7 +23,7 @@
     width: 80%;
     margin: 80px;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
     justify-content: space-between;
     padding: 20px 0px;
 }
@@ -44,35 +44,36 @@
     font-weight: 400;
     color: rgba(36, 36, 36);
     margin: 0 0 10px 0;
+    padding: 0;
     letter-spacing: 1px;
 }
 
 /* form css */
 
 
-.extrapage form{
+.extrapageform{
     display: flex;
     flex-direction: column;
     /* align-items: center; */
     justify-content: flex-start;
-    width:45% ;
+    width:50% ;
     /* max-width: 700px; */
     align-self: center;
 }
 
-.extrapage form .fromgroup{
+.extrapageform .fromgroup{
     display: flex;
     flex-direction: column;
     margin: 10px 0px;
 }
 
-.extrapage form div label{
+.extrapageform div label{
     font-size: 15px;
     font-weight: 600;
     color: var(--col1);
 }
 
-.extrapage form div input{
+.extrapageform div input{
     width: 100%;
     height: 40px;
     border: 1px solid var(--col1);
@@ -81,7 +82,7 @@
     margin-bottom: 10px;
 }
 
-.extrapage  form div textarea{
+.extrapageform div textarea{
     width: 100%;
     min-height: 100px;
     border: 1px solid var(--col1);
@@ -99,8 +100,16 @@
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
-    margin-right: 10px;
+    margin: 20px 0px;
     
+}
+
+.extrapage .formhrading{
+    color: var(--col1);
+    margin: 0 0 30px 0;
+    padding: 0;
+    letter-spacing: 1px;
+    font-size: 60px;
 }
 
 /* ratting css */
@@ -164,6 +173,7 @@
 
 .extrapage .faqcontainer{
     width: 60%;
+    background-color: white;
     align-self: center;
     padding: 60px;
     display: flex;
@@ -183,7 +193,7 @@
     gap: 10px;
     padding: 20px;
     background-color: white;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.45);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     margin: 10px 0px;
 }
@@ -214,3 +224,223 @@
     letter-spacing: 1px;
 }
 
+/* EXTRA PAGES RESPONSIVE CSS */
+
+@media (max-width:1500px){
+    .pgcommon{
+        width: 100%;
+        margin: 0px;
+        padding: 30px;
+    }
+
+    .pgcommon img{
+        width: 40%;
+    }
+
+    .pgcommon div{
+       width: 60%;
+    }
+
+    .pgcommon div  h1{
+        font-size: 40px;
+    }
+
+    .pgcommon div p{
+        font-size: 20px;
+        text-align: justify;
+    }
+
+    .extrapage .faqcontainer{
+        width: 90%;
+    }
+}
+
+@media (max-width:1000px){
+    .pgcommon{
+        width: 100%;
+        margin: 0px;
+        padding: 30px;
+    }
+
+    .pgcommon img{
+        width: 50%;
+    }
+
+    .pgcommon div{
+       width: 50%;
+    }
+
+    .pgcommon div  h1{
+        font-size: 20px;
+    }
+
+    .pgcommon div p{
+        font-size: 16px;
+        text-align: justify;
+    }
+
+    .extrapageform {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 70%;
+        align-self: center;
+        gap: 0;
+    }
+
+    .extrapageform .fromgroup{
+        display: flex;
+        flex-direction: column;
+        margin: 5px 0px;
+    }
+
+    .extrapageform div label{
+        font-size: 15px;
+        font-weight: 600;
+        color: var(--col1);
+    }
+
+    .extrapageform div input{
+        width: 100%;
+        height: 40px;
+        border: 1px solid var(--col1);
+        border-radius: 5px;
+        padding: 5px;
+        margin-bottom: 10px;
+    }
+
+    .extrapageform div textarea{
+        width: 100%;
+        min-height: 100px;
+        border: 1px solid var(--col1);
+        border-radius: 5px;
+        padding: 5px;
+        margin-bottom: 10px;
+    }
+
+    .extrapageform button {
+        width: 200px;
+        height: 50px;
+        border: none;
+        background-color: var(--col1);
+        color: white;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+        margin: 20px 0px;
+    }
+
+    .extrapage .formheading {
+        color: var(--col1);
+        margin: 0 0 10px 0;
+        padding: 0;
+        /* text-align: center; */
+        letter-spacing: 1px;
+        font-size: 30px;
+    }
+}
+
+
+@media (max-width:800px){
+    .pgcommon{
+        width: 100%;
+        margin: 0px;
+        padding: 30px;
+        flex-direction: column;
+    }
+
+    .pgcommon img{
+        width: 90%;
+    }
+
+    .pgcommon div{
+       width: 90%;
+    }
+
+    .pgcommon div  h1{
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .pgcommon div p{
+        font-size: 16px;
+        text-align: justify;
+    }
+
+    .extrapageform{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 90%;
+        align-self: center;
+    }
+
+    .extrapageform .rating {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin: 10px 0px;
+    }
+
+    .extrapageform .rating .starinactive {
+        color: lightgray;
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+    }
+    .extrapageform .rating .staractive {
+        color: gold;
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+        fill: gold;
+    }
+
+}
+
+
+@media (max-width: 600px){
+    .pgcont1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        text-align: center;
+        margin: 30px 0px;
+    }
+    .pgcont1 h3{
+        font-size: 20px;
+        font-weight: 500;
+        color: var(--col1);
+        margin: 0;
+        padding: 0;
+        /* text-align: center; */
+        letter-spacing: 1px;
+    }
+
+    .pgcont1 p{
+        font-size: 15px;
+        font-weight: 400;
+        color: rgb(155, 155, 155);
+        padding: 0;
+        /* text-align: center; */
+        letter-spacing: 1px;
+        margin: 0px;
+    }
+
+    .extrapage .faqcontainer{
+        width: 97%;
+        /* background-color: aqua; */
+        padding: 20px;
+    }
+    .extrapage .faqcontainer .faqhead h1{
+        font-size: 17px;
+    }
+
+    .extrapage .faqcontainer .faqbody p{
+        font-size: 13px;
+    }
+} 

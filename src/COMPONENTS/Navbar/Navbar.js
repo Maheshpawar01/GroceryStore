@@ -252,6 +252,20 @@ function Navbar({reloadnavbar}) {
           </Dropdown>
           </li>
 
+          <li>
+          <Dropdown>
+          <Dropdown.Toggle variant="" id="dropdown-basic">
+            More
+          </Dropdown.Toggle>
+
+          <Dropdown.Menu>
+            <Dropdown.Item href="/FAQ">FAQ</Dropdown.Item>
+            <Dropdown.Item href="/privacypolicy">Privacy Policy</Dropdown.Item>
+            <Dropdown.Item href="/termsandconditions">Terms & Conditions</Dropdown.Item>
+          </Dropdown.Menu>
+        </Dropdown>
+          </li>
+
         </ul>
       </div>
       :
