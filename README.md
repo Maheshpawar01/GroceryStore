@@ -15,6 +15,16 @@ This project is a fully-featured e-commerce platform built with React, designed 
 
 ## 📸 Working
 
+https://github.com/user-attachments/assets/1ae92b34-32a8-4347-87c9-78ec8b635d75
+<img width="1896" height="840" alt="Screenshot 2025-08-01 231135" src="https://github.com/user-attachments/assets/88031c5e-31a3-4a28-aee1-dc836d470872" />
+<img width="1895" height="836" alt="Screenshot 2025-08-01 231314" src="https://github.com/user-attachments/assets/c17c57fc-9b00-4190-9979-0c3475061714" />
+<img width="1897" height="831" alt="Screenshot 2025-08-01 231947" src="https://github.com/user-attachments/assets/f3585a29-d9f7-4b0d-bd85-1f53cd0fcd16" />
+<img width="1891" height="832" alt="Screenshot 2025-08-01 231625" src="https://github.com/user-attachments/assets/b32f3de6-75f3-4e8b-b50e-42b32f737888" />
+<img width="1892" height="828" alt="Screenshot 2025-08-01 231912" src="https://github.com/user-attachments/assets/562a8bcc-7b8f-4fb4-9e98-ea4d94e4ee85" />
+<img width="1891" height="832" alt="Screenshot 2025-08-01 231408" src="https://github.com/user-attachments/assets/1e971d43-17ca-4764-a214-3dd930187e16" />
+<img width="1893" height="836" alt="Screenshot 2025-08-01 231446" src="https://github.com/user-attachments/assets/a062acad-315d-4ffd-b325-b19a59b01216" />
+<img width="1890" height="836" alt="Screenshot 2025-08-01 231528" src="https://github.com/user-attachments/assets/cf301852-cd51-429e-b9b5-aa9d26d258f2" />
+
 ## 🛠️ Tech Stack
 
 - **Frontend:**
