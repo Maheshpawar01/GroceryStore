@@ -2,17 +2,6 @@
 
 This project is a fully-featured e-commerce platform built with React, designed to provide users with a seamless online shopping experience. It includes features such as product browsing, a shopping cart, user authentication, profile management, and more. The platform aims to solve the problem of providing a user-friendly and responsive interface for online shopping, with a focus on ease of navigation and a visually appealing design.
 
-## 🚀 Key Features
-
-- **Product Browsing:** Browse products by category with detailed product information.
-- **Shopping Cart:** Add, remove, and manage items in a shopping cart.
-- **User Authentication:** Secure user registration, login, and password management.
-- **User Profiles:** Manage user information, addresses, and order history.
-- **Responsive Design:**  Optimized for various screen sizes and devices.
-- **Category Sidebar:** Easy navigation through product categories.
-- **Banner Slider:** Eye-catching promotional banners on the homepage.
-- **Product Slider:** Display products in a sliding carousel.
-
 ## 📸 Working
 
 https://github.com/user-attachments/assets/1ae92b34-32a8-4347-87c9-78ec8b635d75
@@ -26,6 +15,17 @@ https://github.com/user-attachments/assets/1ae92b34-32a8-4347-87c9-78ec8b635d75
 <img width="1893" height="836" alt="Screenshot 2025-08-01 231446" src="https://github.com/user-attachments/assets/a062acad-315d-4ffd-b325-b19a59b01216" />
 <img width="1890" height="836" alt="Screenshot 2025-08-01 231528" src="https://github.com/user-attachments/assets/cf301852-cd51-429e-b9b5-aa9d26d258f2" />
 
+## 🚀 Key Features
+
+- **Product Browsing:** Browse products by category with detailed product information.
+- **Shopping Cart:** Add, remove, and manage items in a shopping cart.
+- **User Authentication:** Secure user registration, login, and password management.
+- **User Profiles:** Manage user information, addresses, and order history.
+- **Responsive Design:**  Optimized for various screen sizes and devices.
+- **Category Sidebar:** Easy navigation through product categories.
+- **Banner Slider:** Eye-catching promotional banners on the homepage.
+- **Product Slider:** Display products in a sliding carousel.
+  
 ## 🛠️ Tech Stack
 
 - **Frontend:**
